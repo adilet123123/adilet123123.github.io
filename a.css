@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --index: calc(1vw+1vh);
+  --color-header: #f4efec;
+  --color-text: #cdc6c3;
+  --gallery-gap: calc(var(--index) * 2);
+}
+@font-face {
+  font-family: "bebasneue";
+  src: url(./fonts/bebasneuecyrillic.ttf);
+}
+@font-face {
+  font-family: "boldstrom";
+  src: url(./fonts/Boldstrom\ D.otf);
+}
+@font-face {
+  font-family: "noir-pro";
+  src: url(./fonts/NoirPro-Medium.otf);
+}
+@font-face {
+  font-family: "Druk wide";
+  src: url(./fonts/Druk\ Wide\ Bold.otf);
+}
+.content .w_img .main_header .gallery > * {
+  will-change: transform;
+}
+body {
+  overflow-x: hidden;
+  background-image: url(./img/Group\ 9.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  color: #fafafa;
+  overflow-x: hidden;
+}
+.w_img {
+  top: -10vh;
+  position: absolute;
+  left: 40vw;
+  width: calc(var(--index) * 70);
+  z-index: -1;
+}
+.container {
+  padding: 0 10vw;
+}
+.main_header {
+  height: 100vh;
+  margin-left: -5vw;
+}
+.main_text {
+  font-size: calc(var(--index) * 7);
+  position: absolute;
+  top: 50vh;
+  font-family: "bebasneue";
+  left: 6vw;
+}
+.gallery {
+  display: flex;
+  padding: calc(var(--index) * 10) 0;
+}
+.gallery > * {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.text {
+  font-family: "Druk wide";
+  color: var(--color-text);
+}
+.text_h {
+  font-size: 2rem;
+  line-height: 2.4rem;
+  color: var(--color-header);
+  margin-bottom: 4vh;
+}
+.text_p {
+  line-height: 1.75;
+}
+.gallery_item {
+  max-width: calc(var(--index) * 30);
+  margin-bottom: var(--gallery-gap);
+  border-radius: 8px;
+}
+.work_1 {
+  height: calc(var(--index) * 25);
+  width: calc(var(--index) * 30);
+}
+.work_2 {
+  height: calc(var(--index) * 60);
+  width: calc(var(--index) * 30);
+}
+.work_3 {
+  height: calc(var(--index) * 40);
+  width: calc(var(--index) * 30);
+}
+.work_4 {
+  height: calc(var(--index) * 45);
+  width: calc(var(--index) * 30);
+}
+.work_5 {
+  height: calc(var(--index) * 30);
+  width: calc(var(--index) * 30);
+}
+.g_left {
+  margin-top: calc(var(--gallery-gap) * 1);
+}
+.g_right .gallery_item {
+  margin: 0;
+  margin-top: calc(var(--gallery-gap));
+}
